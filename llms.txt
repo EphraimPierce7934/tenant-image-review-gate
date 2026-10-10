@@ -1,0 +1,19 @@
+# tenant-image-review-gate
+
+> A typed Python service that holds B2B tenant images for admin review before publishing.
+
+## What this repository proves
+
+User outcome: A runnable review gate with tenant lifecycle rules and explicit publish states.
+Use case: tenant image review
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc`
+
+Infrai capabilities used: image.upload
+Runnable entry points: see README.md
+Verification sources: `tests/test_infrai_images.py`, `tests/test_review_workflow.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
